@@ -57,6 +57,8 @@ button {
 
 .header {
     position: relative;
+    overflow: hidden;
+    /* padding-bottom: 400px; */
 }
 
 .head-circles-wrapper {
@@ -138,7 +140,7 @@ button {
 /* parallax illustration */
 .scene_relative {
     position: relative;
-    height: 1058px;
+    height: 1080px;
     overflow: hidden;
 }
 
@@ -244,6 +246,51 @@ button {
     border-radius: 0 0 40px 0;
 }
 
+
+/* run line */
+.run-line {
+    height: 250px;
+    position: relative;
+
+}
+
+.run-line__item {
+    position: absolute;
+    left: -9%;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 120%;
+    height: 86px;
+    background: #fff;
+    color: #54362C;
+    transform: rotate(3.72deg);
+}
+
+.run-line__item:last-of-type {
+    background: #54362C;
+    color: #fff;
+    transform: rotate(-5.92deg);
+}
+
+.run-line__item-inner {
+    white-space: nowrap;
+    margin: 0 auto;
+    display: flex;
+}
+
+.run-line__txt {
+    font-size: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.run-line__txt:not(:last-of-type) {
+    margin-right: 52px;
+}
 
 
 
