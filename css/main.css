@@ -1,13 +1,16 @@
-/*спецификация*/
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Passion+One:wght@700&display=swap');
+/*specifications*/
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	color: #000;
 	line-height: 1.4em;
+    background: #F1C650;
 }
 
 * {
@@ -23,6 +26,7 @@ ul, li {
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
+    font-family: 'Passion One', cursive;
 }
 
 p {
@@ -48,8 +52,197 @@ button {
 	cursor: pointer;
 }
 
+
 /* header */
 
+.header {
+    position: relative;
+}
+
+.head-circles-wrapper {
+    position: absolute;
+    z-index: 100;
+    top: 27px;
+    left: 0;
+    right: 0;
+}
+
+.head-circles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-circles__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-circles__item {
+    width: 91px;
+    height: 91px;
+}
+
+.head-circles__item:first-of-type {
+    margin-right: 15px;
+}
+
+.main-title-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 101;
+    top: 38px;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center
+}
+
+.main-title__recipe {
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+    text-transform: uppercase;
+    color: #F1C650;
+    font-weight: 600;
+    letter-spacing: 0.17em;
+}
+
+.main-title__script {
+    width: 286px;
+    height: 47px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 44px;
+}
+
+.main-title__title {
+    width: 747px;
+    height: 129px;
+    display: block;
+}
+
+.main-title__title_two {
+    width: 533px;
+    height: 124px;
+    display: block;
+    margin-top: 40px;
+}
+
+
+
+/* parallax illustration */
+.scene_relative {
+    position: relative;
+    height: 1058px;
+    overflow: hidden;
+}
+
+.scene__red-bg {
+    height: 580px;
+    position: absolute;
+    background: #D03F36;
+    width: 100%;
+    z-index: 1;
+}
+
+.scene__red-sun {
+    width: 817px;
+    height: 671px;
+    background: url('../img/red-sun.svg') no-repeat center center/contain;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 187px !important;
+}
+
+.scene__clouds {
+    width: 1343px;
+    height: 254px;
+    background: url('../img/clouds_1.svg') no-repeat center center/contain;
+    z-index: 3;
+    position: absolute;
+    left: -52px !important;
+    right: 0;
+    margin: 0 auto;
+    top: 213px !important;
+}
+
+.scene__front-woman {
+    background: url('../img/front_woman_1.svg') no-repeat center center/contain;
+    width: 76px;
+    height: 189px;
+    z-index: 9;
+    position: absolute;
+    left: -22px !important;
+    top: 839px !important;
+    right: 0;
+    margin: 0 auto;
+}
+
+.scene__palms {
+    background: url('../img/palms_1.svg') no-repeat center center/contain;
+    width: 1521px;
+    height: 660px;
+    z-index: 8;
+    position: absolute;
+    left: 7px !important;
+    top: 463px !important;
+    right: 0;
+    margin: 0 auto;
+}
+
+.scene__back-obj {
+    background: url('../img/back-items_1_.svg') no-repeat center center/contain;
+    width: 627px;
+    height: 108px;
+    z-index: 7;
+    position: absolute;
+    left: -419px !important;
+    top: 513px !important;
+    right: 0;
+    margin: 0 auto;
+}
+
+.scene__main-img-obj {
+    background: url('../img/girl-turtle-fishes_1_.svg') no-repeat center center/contain;
+    width: 570px;
+    height: 188px;
+    z-index: 6;
+    position: absolute;
+    left: -119px !important;
+    top: 677px !important;
+    right: 0;
+    margin: 0 auto;
+}
+
+.scene__main-img {
+    background: url('../img/main-img_1.svg') no-repeat center center/contain;
+    width: 1010px;
+    height: 631px;
+    z-index: 5;
+    position: absolute;
+    left: 61px !important;
+    top: 350px !important;
+    right: 0;
+    margin: 0 auto;
+}
+
+.scene__blue-bg {
+    height: 394px;
+    width: 81%;
+    background: #8BCEDE;
+    z-index: 4;
+    position: absolute;
+    top: 580px !important;
+    border-radius: 0 0 40px 0;
+}
 
 
 

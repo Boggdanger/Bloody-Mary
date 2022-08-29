@@ -8,6 +8,58 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    
+    <header class="header" id="header">
+        <div class="head-circles-wrapper">
+            <div class="container">
+                <div class="head-circles">
+                    <div class="head-circles__inner">
+                        <img src="./img/logo-head-604.svg" alt="Restourant 604" class="head-circles__item">
+                        <img src="./img/logo-made-in.svg" alt="Made in Hawaii with aloha" class="head-circles__item">
+                    </div>
+                    <div class="head-circles__inner">
+                        <img src="./img/Spice-lvl.svg" alt="Space level: 3/5" class="head-circles__item">
+                        <img src="./img/refresh-lvl.svg" alt="Refresh level: 5/5" class="head-circles__item">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-title-wrapper">
+            <div class="container">
+                <div class="main-title">
+                    <h5 class="main-title__recipe">
+                        Recipe for
+                    </h5>
+                    <img src="./img/hero-subtitle.svg" alt="Hawaii's Best" class="main-title__script">
+                    <img src="./img/hero-title-1.svg" alt="Bloody Mary" class="main-title__title">
+                    <img src="./img/hero-title-2.svg" alt="Bloody Mary" class="main-title__title_two">
+                </div>
+            </div>
+        </div>
+        <!-- parallax start -->
+        <div class="scene scene_relative" id="scene">
+            <div class="scene__clouds" data-depth="0.07"></div>
+            <div class="scene__red-sun" data-depth="0.03"></div>
+            <div class="scene__red-bg"></div>
+
+            <div class="scene__back-obj" data-depth="0.09"></div>
+            <div class="scene__palms" data-depth="0.25"></div>
+            <div class="scene__front-woman" data-depth="0.2"></div>
+            <div class="scene__main-img-obj" data-depth="0.15"></div>
+            <div class="scene__main-img" data-depth="0.12"></div>
+            <div class="scene__blue-bg"></div>
+        </div>
+        <!-- parallax end -->
+    </header>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/gsap-settings.js"></script>
 </body>
 </html>
