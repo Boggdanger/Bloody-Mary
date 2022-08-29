@@ -58,7 +58,6 @@ button {
 .header {
     position: relative;
     overflow: hidden;
-    /* padding-bottom: 400px; */
 }
 
 .head-circles-wrapper {
@@ -518,7 +517,7 @@ button {
     .scene__blue-bg {
         height: 278px;
         top: 505px !important;
-        width: 100%;
+        width: 103%;
         border-radius: 0;
     }
 
@@ -537,12 +536,226 @@ button {
 }
 
 @media (max-width: 767px) {
-	
+	.container {
+        width: 540px;
+    }
+
+    .head-circles-wrapper {
+        top: 26px;
+    }
+
+    .head-circles__item {
+        width: 70px;
+        height: 70px;
+    }
+
+    .main-title-wrapper {
+        top: 112px;
+    }
+
+    .main-title__script {
+        width: 271px;
+        height: 44px;
+        display: block;
+        margin-top: 9px;
+        margin-bottom: 25px;
+    }
+
+    .scene__red-bg {
+        height: 540px;
+    }
+
+    .scene__palms {
+        width: 990px;
+        height: 265px;
+        left: -316px !important;
+        top: 634px !important;
+        right: 0 !important;
+        margin: 0 auto;
+        background: url('../img/palms_1_mob-large.svg') no-repeat center center/contain;
+    }
+
+    .scene__front-woman {
+        width: 56px;
+        height: 135px;
+        left: -127px !important;
+    }
+
+    .scene__back-obj {
+        width: 311px;
+        height: 73px;
+        top: 493px !important;
+    }
+
+    .scene__main-img-obj {
+        width: 290px;
+        height: 98px;
+        left: -64px !important;
+        top: 595px !important;
+    }
+
+    .scene__main-img {
+        width: 90%;
+        max-height: 320px;
+        top: 432px !important;
+    }
+
+    .scene__blue-bg {
+        height: 278px;
+        top: 537px !important;
+    }
 
 }
 
 @media (max-width: 575px) {
-	
+	.container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .main-title__script {
+        max-width: 270px;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-title__title {
+        max-width: 485px;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-title__title_two {
+        max-width: 336px;
+        width: 70%;
+        height: auto;
+    }
+
+    .scene__clouds {
+        top: 406px !important;
+        max-width: 510px;
+        width: 100%;
+        height: 94px;
+        left: 0 !important;
+        right: 0 !important;
+        margin: 0 auto;
+    }
+
+    .scene__palms {
+        left: -363px !important;
+        background: url('../img/palms_1_mobile.svg') no-repeat center center/contain;
+        max-width: 550px;
+        width: 70%;
+        margin: 0 auto;
+        left: 0 !important;
+        right: 0 !important;
+    }
+
+    .scene__front-woman {
+        top: 660px !important;
+        max-width: 452px;
+        width: 11%;
+        left: -44px !important;
+    }
+
+    .scene__main-img-obj {
+        max-width: 290px;
+        width: 52%;
+        max-height: 98px;
+        height: 70%;
+    }
+
+    .scene__back-obj {
+        max-width: 311px;
+        width: 48%;
+        height: 73px;
+        top: 493px !important;
+        left: -130px !important;
+    }
+
+    .scene__red-sun {
+        max-width: 481px;
+        width: 90%;
+        height: 405px;
+        top: 264px !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: 0 auto;
+    }
+
+    .scene__blue-bg {
+        height: 42vw;
+    }
+
+    .run-line {
+        left: -20%;
+        width: 200%;
+    }
+
+    .run-line__item {
+        left: 0%;
+        width: 175%;
+    }
+
+}
+
+@media (max-width: 402px) {
+    .head-circles__item {
+        width: 60px;
+        height: 60px;
+    }
+
+    .head-circles__item:first-of-type {
+        margin-right: 9px;
+    }
+
+	.scene__main-img {
+        width: 90%;
+        max-height: 227px;
+        top: 386px !important;
+    }
+
+    .scene__red-sun {
+        top: 216px !important;
+    }
+
+    .scene__clouds {
+        top: 347px !important;
+    }
+
+    .scene__back-obj {
+        top: 425px !important;
+    }
+
+    .scene__front-woman {
+        top: 556px !important;
+        width: 7%;
+        height: 91px;
+    }
+
+    .scene__palms {
+        height: 146px;
+        top: 497px !important;
+    }
+
+    .scene__main-img-obj {
+        left: -48px !important;
+        top: 493px !important;
+    }
+
+    .scene__red-bg {
+        height: 468px;
+    }
+
+    .scene__blue-bg {
+        top: 468px !important;
+        height: 36vw;
+    }
+
+    .scene_relative {
+        height: 694px;
+    }
+
 
 }
 
