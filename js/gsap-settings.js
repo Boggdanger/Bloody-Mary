@@ -283,13 +283,12 @@ recImg.add("(max-width: 768px)", () => {
             scrub: true,
             start: "top top",
             end: "top -50",
-            markers: true,
+            // markers: true,
         },
         opacity: 0.15,
         ease: "none",
     });
 
-    // gsap.to(".recipe-image__inner", {opacity: 0.3});
 
 });
 
