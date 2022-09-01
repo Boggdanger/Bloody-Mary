@@ -42,11 +42,3 @@ function scrollTo(element) {
     cursorinner.classList.remove('cursorinnerhover')
   });
 
-  ab.forEach(item => {
-    item.addEventListener('mouseover', () => {
-      $('.cursor2').hide();
-    });
-    item.addEventListener('mouseleave', () => {
-      $('.cursor2').fadeIn();
-    });
-  });

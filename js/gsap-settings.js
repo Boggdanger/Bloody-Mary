@@ -227,13 +227,13 @@ const logoBot = gsap.timeline({
     }
 });
 
-logoBot.from(".logos__item:nth-child(1)", {y: 150, opacity: 0.2, deley: 0.05})
-        .from(".logos__item:nth-child(2)", {y: 150, opacity: 0.2, deley: 0.1})
-        .from(".logos__item:nth-child(3)", {y: 150, opacity: 0.2, deley: 0.15})
-        .from(".logos__item:nth-child(4)", {y: 150, opacity: 0.2, deley: 0.2})
-        .from(".logos__item:nth-child(5)", {y: 150, opacity: 0.2, deley: 0.25})
-        .from(".logos__item:nth-child(6)", {y: 150, opacity: 0.2, deley: 0.3})
-        .from(".logos__item:nth-child(7)", {y: 150, opacity: 0.2, deley: 0.35});
+logoBot.from(".logos__item:nth-child(1)", {y: 150, opacity: 0, deley: 0.05})
+        .from(".logos__item:nth-child(2)", {y: 150, opacity: 0, deley: 0.1})
+        .from(".logos__item:nth-child(3)", {y: 150, opacity: 0, deley: 0.15})
+        .from(".logos__item:nth-child(4)", {y: 150, opacity: 0, deley: 0.2})
+        .from(".logos__item:nth-child(5)", {y: 150, opacity: 0, deley: 0.25})
+        .from(".logos__item:nth-child(6)", {y: 150, opacity: 0, deley: 0.3})
+        .from(".logos__item:nth-child(7)", {y: 150, opacity: 0, deley: 0.35});
 
 
 // footer
