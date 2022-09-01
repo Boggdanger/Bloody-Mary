@@ -1,7 +1,7 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Passion+One:wght@700&display=swap');
-/*specifications*/
 
+/*specifications*/
 body {
 	margin: 0;
 	padding: 0;
@@ -59,7 +59,26 @@ button {
 }
 
 
-
+/* custom cursor */
+.cursor2 {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 999;
+  }
+  
+  .hover {
+    background-color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+  }
+  
+/* custom cursor */
 
 
 
@@ -295,9 +314,6 @@ button {
 .run-line__txt:not(:last-of-type) {
     margin-right: 52px;
 }
-
-
-
 
 /* 2 section ingridients */
 .ingredient-inner {
@@ -574,7 +590,6 @@ button {
     margin: 0 50px;
 }
 
-
 .recipe-wrapper {
     display: flex;
     justify-content: space-between;
@@ -651,7 +666,6 @@ button {
     z-index: 3;
     background: #D03F36;
 }
-
 
 /* 4 section about */
 .about {
@@ -784,6 +798,79 @@ button {
     z-index: 20;
 }
 
+/* 6 footer */
+.footer {
+    background: #F1C650;
+    overflow: hidden;
+}
+
+.footer-script {
+    width: 368px;
+    height: 61px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+.footer-title {
+    height: 124px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+.footer-bot {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #54362C;
+    padding-top: 28px;
+    padding-bottom: 50px;
+    font-size: 15px;
+    position: relative;
+    align-items: center;
+}
+
+.footer-bot__btn {
+    width: 84px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -50%;
+    border-radius: 50%;
+    border: 2px solid #54362C;
+    background: #F1C650;
+}
+
+.footer-bot__btn-img {
+    width: 18px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.footer-bot__social-wrapper {
+    display: flex;
+}
+
+.footer-bot__link {
+    display: flex;
+    align-items: center;
+    color:#000;
+}
+
+.footer-bot__link:not(:first-of-type) {
+    margin-left: 68px;
+}
+
+.footer-bot__link-img {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
 
 
 @media (min-width: 1919px) and (max-width: 2518px) { 
@@ -798,6 +885,7 @@ button {
         padding: 46px 0;
     }
 }
+
 
 @media (min-width: 2519px) { 
     .scene__blue-bg {
@@ -902,7 +990,6 @@ button {
     .run-line {
         height: 170px;
     }
-
 
     /* 2 section ingridients */
     .ingredient-inner {
@@ -1200,6 +1287,26 @@ button {
         height: 256px;
         padding-top: 38px;
     }
+
+    /* 6 footer */
+    .footer-title {
+        height: 90px;
+        margin-bottom: 86px;
+    }
+
+    .footer-bot {
+        padding-top: 40px;
+    }
+
+    .footer-bot__btn {
+        width: 65px;
+        height: 65px;
+        top: -39%;
+    }
+
+    .cursor2 {
+        display: none;
+    }
 }
 
 @media (max-width: 1120px) {
@@ -1224,8 +1331,6 @@ button {
 	.scene__blue-bg {
         width: 86%;
     }
-
-
 
 }
 
@@ -1612,8 +1717,54 @@ button {
         padding-top: 15px;
     }
 
+    /* 6 footer */
+    .footer-script {
+        width: 311px;
+        height: 47px;
+        margin-bottom: 32px;
+    }
+
+    .footer-title {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .footer-title__title,
+    .footer-title__title_two {
+        object-fit: contain;
+        height: 96px;
+    }
+
+    .footer-title__title:first-child {
+        margin-bottom: 20px;
+    }
+
+    .footer-bot {
+        flex-direction: column-reverse;
+        padding-top: 50px;
+    }
+
+    .footer-bot__btn {
+        top: -23%;
+    }
+
+    .footer-bot__link-img {
+        width: 32px;
+        height: 32px;
+        margin-right: 0px;
+    }
+
+    .footer-bot__txt {
+        display: none;
+    }
+
+    .footer-bot__copiright {
+        margin-top: 20px;
+        text-align: center;
+    }
 
 }
+
 
 @media (max-width: 767px) {
 	.container {
@@ -1891,7 +2042,6 @@ button {
         top: 396px;
     }
 
-
     /* 5 srction logotypes */
     .logos__item {
         width: 13.7%;
@@ -1904,8 +2054,8 @@ button {
         height: 60px;
     }
     
-
 }
+
 
 @media (max-width: 575px) {
 	.container {
@@ -1996,7 +2146,6 @@ button {
         left: 0%;
         width: 175%;
     }
-
 
     /* 2 section ingridients */
     .ingredient__title {
@@ -2276,9 +2425,23 @@ button {
         margin-bottom: 2.5vw;
     }
 
+    /* 6 footer */
 
+    .footer-script {
+        width: 238px;
+        height: 39px;
+    }
+
+    .footer-title img {
+        height: 60px;
+    }
+
+    .footer-bot__link:not(:first-of-type) {
+        margin-left: 38px;
+    }
 
 }
+
 
 @media (max-width: 402px) {
     .head-circles__item {
@@ -2337,12 +2500,10 @@ button {
         height: 694px;
     }
 
-
 }
 
 
 @media (max-width: 360px) {
-
     .run-line__item-inner {
         margin-left: -400px;
     }
@@ -2406,7 +2567,6 @@ button {
         width: 70%;
     }
 
-
     .ingredient__front-serf {
         top: 453px;
     }
@@ -2446,48 +2606,6 @@ button {
         margin-right: 0px;
         margin-left: 0vw;
     }
-
-    /* .about-txt__img-palm {
-        top: 5vw;
-        right: 3vw;
-    }
-
-    .about-txt__img-serf-men {
-        width: 13vw;
-        height: 14vw;
-        left: 3vw;
-        top: 9vw;
-    }
-
-    .about-txt__img-flower {
-        right: 18vw;
-        top: 84vw;
-    }
-
-    .about-txt__img-turtle {
-        left: 12vw;
-        top: 86vw;
-        width: 20vw;
-        height: 11vw;
-    } */
-    
-
-    /* .about-txt__img-palm_bot {
-        display: none;
-    }
-
-    .about-txt__text span:nth-child(1) {
-        display: inline-block;
-    }
-
-    .about-txt__text span:nth-child(2) {
-        margin-left: 1vw;
-    }
-
-    .about-txt__text span:nth-child(3) {
-        margin-right: 0px;
-        margin-left: 0;
-    } */
 
 }
 
