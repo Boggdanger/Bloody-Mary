@@ -196,6 +196,23 @@ gsap.to(".recipe-title__wrapper", {
     ease: "none",
 });
 
+
+// recipe 1111
+const about = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".about",
+      start: "-100 center",
+      end: "250 center",
+      scrub: true,
+    //   markers: true
+    }
+  });
+
+  about.from(".about-txt__text", {opacity: 0.3, y: 200, autoAlpha: 0})
+       .from(".about-txt img", {scale:0.3, opacity: 0.3, y: 100, autoAlpha: 0});
+
+
+
 // recipe photo
 // gsap.to(".recipe-wrapper", {
 //     scrollTrigger: {
