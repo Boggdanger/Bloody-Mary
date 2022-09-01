@@ -309,3 +309,48 @@ recImg.add("(max-width: 768px)", () => {
 
 });
 
+
+// run line bottom
+gsap.to(".run-line__bottom-one", {
+    scrollTrigger: {
+        trigger: ".run-line_bottom",
+        scrub: 1,
+        start: "-70vh bottom",
+        // markers: true,
+    },
+    x:-200,
+    duration: 2,
+    ease: "none",
+});
+
+gsap.to(".run-line__bottom-two", {
+    scrollTrigger: {
+        trigger: ".run-line_bottom",
+        scrub: 1,
+        start: "-70vh bottom",
+        // markers: true,
+    },
+    x:200,
+    duration: 2,
+    ease: "none",
+});
+
+// recipe
+const logoBot = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".logotypes",
+      start: "top 600",
+      end: "top 450",
+      scrub: 4,
+    //   markers: true,
+    }
+  });
+
+
+logoBot.from(".logos__item:nth-child(1)", {y: 150, opacity: 0.2, deley: 0.05})
+        .from(".logos__item:nth-child(2)", {y: 150, opacity: 0.2, deley: 0.1})
+        .from(".logos__item:nth-child(3)", {y: 150, opacity: 0.2, deley: 0.15})
+        .from(".logos__item:nth-child(4)", {y: 150, opacity: 0.2, deley: 0.2})
+        .from(".logos__item:nth-child(5)", {y: 150, opacity: 0.2, deley: 0.25})
+        .from(".logos__item:nth-child(6)", {y: 150, opacity: 0.2, deley: 0.3})
+        .from(".logos__item:nth-child(7)", {y: 150, opacity: 0.2, deley: 0.35})
